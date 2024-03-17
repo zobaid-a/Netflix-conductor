@@ -35,7 +35,7 @@ RUN yarn install && yarn build
 # 1. Bin stage
 # ===========================================================================================================
 
-FROM nginx:alpine
+FROM nginx:1.25.4-alpine3.18
 RUN apk add openjdk11-jre
 
 LABEL maintainer="Netflix OSS <conductor@netflix.com>"
